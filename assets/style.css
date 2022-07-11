@@ -64,8 +64,18 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
-/*Hero Styles*/
 
+/*Hero Styles*/
+.hero {
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
 
 
 /* My Featured Work Style */
