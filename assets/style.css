@@ -1,0 +1,70 @@
+/* General Styles */
+:root {
+    --black: #000F20;
+    --red: #B71A2E;
+    --teal: #609CB5;
+    --green: #A1B63F;
+    --sky: #C2DBEB;
+}
+
+/*Header  Styles*/
+header {
+    padding: 20px 35px;
+    background-color: var (--green);
+    background-image:
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+header h1 header h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--black);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header a {
+    text-decoration: none;
+    color: var(--black);
+}
+/*Nav Styles*/
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header nav ul li a:hover {
+    background: var(--green);
+    color: var(--black);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/*Hero Styles*/
+
+
+
+/* My Featured Work Style */
+
+
+
+/* Footer Style */
+
+
