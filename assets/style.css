@@ -67,10 +67,24 @@ header nav ul li a:hover {
 /*Hero Styles*/
 
 
+
 /* My Featured Work Style */
 
 
 
 /* Footer Style */
+footer {
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--red);
+    font-size: 15px;
+    margin: 0
+}
 
 
