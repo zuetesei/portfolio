@@ -36,15 +36,14 @@ header h1 {
     color: var(--black);
     margin: 0;
 }
-header a {
-    text-decoration: none;
-    color: var(--teal);
-}
-
 
 /*Nav Styles*/
 header nav {
     margin: 7px 0;
+}
+header a {
+    text-decoration: none;
+    color: var(--teal);
 }
 header nav ul {
     display: flex;
@@ -69,7 +68,7 @@ header nav ul li a:hover {
 
 /*Main Section Styles*/
 .content {
-    height: 600px;
+    height: 100%;
     background-image: url(hero.jpg);
     background-size: cover;
     background-position: center;
@@ -77,16 +76,17 @@ header nav ul li a:hover {
     padding: 100px;
 }
 .greet-wrapper {
-    width: 40%;
+    width: 80%;
     height: 250px;
     background-color: var(--teal);
     color: var(--black);
-    border: solid 3px var(--red);
-    margin: 3.5%;
+    /*margin: 3.5%;*/
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(28, 139, 187, 0.8);
+    margin-left: 110px;
 }
 
 .greet-wrapper h2 {
@@ -103,19 +103,46 @@ header nav ul li a:hover {
 }
 
 .greeting {
+    font-family: "Dosis";
+    margin-left: 25px;
+    float: right;
+    width: 100%;
+}
 
+.socials {
+    /* padding-top: 3%; */
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.socials a {
+    /* padding-top: 3%; */
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    padding: 50px;
 }
 
 
 /* My Featured Work Style */
 .portfolio {
-    height: 600px;
+    height: 700px;
     margin: 0;
     display: grid;
     grid-template-rows: 500px 100px;
     grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
     align-items: center;
     justify-items: center;
+    background: radial-gradient(var(--green), var(--sky));;
+}
+#work h2{
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Baskerville';
+    font-size: 30px;
+    color: var(--green)
 }
 #carousel {
     grid-row: 1 / 2;
@@ -221,3 +248,37 @@ footer h2 {
 }
 
 
+/*Media Query*/
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .greeting, .socials {
+        width: 100%;
+    }
+
+    .greeting {
+        text-align: center;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+}
