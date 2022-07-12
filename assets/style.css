@@ -40,6 +40,18 @@ header a {
     text-decoration: none;
     color: var(--teal);
 }
+/*
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 100%;
+    min-width: 300px;
+    color: var(--black);
+    text-align: left;
+    font-family: "Dosis";
+} */
+
 /*Nav Styles*/
 header nav {
     margin: 7px 0;
@@ -52,11 +64,11 @@ header nav ul {
     list-style: none;
 }
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 15px 50px;
     font-family:'Dosis';
     font-weight: bolder;
     font-size: 1.8vw;
-    text-shadow: 0 0 10px rgba(28, 139, 187, 0.9);
+    text-shadow: 0 0 10px rgba(28, 139, 187, 0.5);
 }
 header nav ul li a:hover {
     background: var(--teal);
@@ -65,21 +77,50 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-/*Hero Styles*/
-.hero {
+/*Main Section Styles*/
+.content {
+    height: 600px;
     background-image: url(hero.jpg);
     background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    background-position: center;
+    position: relative;
+    padding: 100px;
 }
+.greet-wrapper {
+    width: 40%;
+    height: 250px;
+    background-color: var(--teal);
+    color: var(--black);
+    border: solid 3px var(--red);
+    margin: 3.5%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.greet-wrapper h2 {
+    font-family: "Baskerville";
+    font-weight: bold;
+    margin-left: 2em;
+    line-height: 4em;
+}
+
+.greet-wrapper p {
+    font-family: "Dosis";
+    font-size: 15px;
+    line-height: 1em;
+}
+
+.greeting {
+
+}
+
 
 
 /* My Featured Work Style */
 
+/* Reach Out Section */
 
 
 /* Footer Style */
