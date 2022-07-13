@@ -8,63 +8,71 @@
 </head>
 <body>
 
-<!--nav-->
+<!--header-->
 <header> 
-    <h1> lovezue </h1>   
-    <nav>
-    <ul> 
-        <li><a href="#my-portfolio"> Portfolio </a></li>
-    </ul>
-    </nav>
+    <a href="#aboutZue"><h1> lovezue </h1></a>  
 </header> 
 
 <!--main-->
 <main>
+  <!--greeter-->  
 <section class="content">
-    <div class="greet-wrapper">
+    <div class="greeting-wrapper">
         <div class="greeting"> 
-            <h2> Hi I'm Zue, </h2>
-            <p> Thanks for visiting my space on the internet. Let's connect and create something beautiful! </p>
+            <h2> 👋🏽 Hey you, I'm Zuleika!</h2>
+            <h3> [ zu * lei * ka ] </h3>
+            <p> I am a Web Developer student..Let's connect and create something awesome!  </p>
         </div>
-        <div id="social" class="socials text-center">
-            <a href="https://github.com/zuetesei">
-                <img alt="Github" src="assets/photos/github.jpg" width="50px" height="50px">
-             </a>
-             <a href="mailto:zuleikatesei@gmail.com">
-                <img alt="Email Me" src="assets/photos/mail.jpg" width="50px" height="50px">
-             </a>
-             <a href="https://www.linkedin.com/in/zuleika-tesei-437613113/">
-                <img alt="LinkedIn" src="assets/photos/linkedin.jpg" width="50px" height="50px">
-             </a>
-        </div>
+        <nav id="social" class="socials">
+            <a href="#my-portfolio"> <img alt="portfolio" src="assets/photos/portfolio.jpg"/> </a>
+            <a href="https://github.com/zuetesei"> <img alt="Github" src="assets/photos/github.jpg"/> </a>
+            <a href="mailto:zuleikatesei@gmail.com"> <img alt="Email Me" src="assets/photos/mail.jpg"/> </a>
+            <a href="https://www.linkedin.com/in/zuleika-tesei-437613113/"> <img alt="LinkedIn" src="assets/photos/linkedin.jpg"/> </a>
+        </nav>
     </div>
 </section>
 
 <!--my featured work -->
-<section id="work"> <h2> My Featured Work </h2> </section>
+<section class="myportfolio">
+<section id="secondary-title"> <h2> FEATURED WORKS </h2> </section>
+
 <section class="portfolio" id="my-portfolio">
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
     <input type="radio" name="position" checked/>
     <input type="radio" name="position" />
     <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
     <div id="carousel">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+        <div class="item"> 
+            <h4> Project 1 </h4>
+        </div>
+        <div class="item">
+            <h4> Project 2 </h4>
+        </div>
+        <div class="item">
+            <h4> Project 3 </h4>
+        </div>
+        <div class="item">
+            <h4> Project 4 </h4>
+        </div>
+        <div class="item">
+            <h4> Project 5 </h4>
+        </div>
     </div>       
 </section>
+</section>
+
+<!--aboutZue -->
+<section id="aboutZue" class="about-section">
+<img alt="picture of website owner, Zuleika Tesei" src="assets/photos/self.jpg"/>
+</section> 
+
+
 </main>
-
-
-<!--reach out-->
-<section></section>     
 
 <!--footer-->
 <footer>
-    <h2> ❤️ Made with love by Zue. </h2>
+    <h5> ❤️ Made with love by Zue. </h5>
 </footer>
 </body>
 </html>
