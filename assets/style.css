@@ -21,9 +21,6 @@ header {
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -34,39 +31,9 @@ header h1 {
     font-family: 'Baskerville';
     font-size: 36px;
     color: var(--black);
-    margin: 0;
 }
 
-/*Nav Styles*/
-header nav {
-    margin: 7px 0;
-}
-header a {
-    text-decoration: none;
-    color: var(--teal);
-}
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-header nav ul li a {
-    padding: 15px 50px;
-    font-family:'Dosis';
-    font-weight: bolder;
-    font-size: 1.8vw;
-    text-shadow: 0 0 10px rgba(28, 139, 187, 0.5);
-}
-header nav ul li a:hover {
-    background: var(--teal);
-    color: var(--green);
-    border-radius: 15px;
-    text-shadow: none;
-}
-
-/*Main Section Styles*/
+/* Main Section */
 .content {
     height: 600px;
     background-image:url(photos/landing-bg.jpg);
@@ -165,7 +132,7 @@ header nav ul li a:hover {
 }
 
 
-/* My Featured Work Style */
+/* My Featured Work */
 .myportfolio {
     background: radial-gradient(var(--red), var(--green));
 }
@@ -286,27 +253,51 @@ input:nth-of-type(2) {
     background-position: center;
     position: relative;
 }
-.about-content{
-    clear: right;
-    display: flex;
-} 
-.about-content p {
-    margin-top: 100px;
-    margin-left: 200px;
-    font-family: 'Baskerville';
-    font-size: 36px;
+
+.about-section h2 {
+    font-family: 'Dosis';
+    font-size: 18px;
+    font-weight: 600;
     color: var(--black);
-    justify-content: center;
+    margin-left: 10em;
+    padding-top: 150px;
+    letter-spacing: 2px;
 }
-.about-photo img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 30%;
-    float: right;
-    display: flex;
-    margin-right: 200px;
+.about-content p {
+    margin-left: 8em;
+    font-family: 'Baskerville';
+    font-size: 24px;
+    color: var(--black);
+    width: 50px;
+    line-height: 2em;
+    padding-bottom: 10px;
 }
 
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+ .about-content > * {
+    flex: 1;
+    margin: 10px;
+}
+
+.about-content img {
+    max-width: 300px;
+    height: max-content;
+    border-radius: 20%;
+    padding-right: 100px;
+    box-shadow:  0 0 10px rgba (0,0,0,0.9);
+}
+.connect img{
+    height: 80px; 
+    width: 80px;
+    margin-left: 40em;
+    align-content: center;
+}
 
 /* Footer Style */
 footer {
@@ -329,30 +320,72 @@ footer h2 {
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-    }
-
-    header h1 {
+        justify-content: left;
         width: 100%;
-        text-align: center;
+        margin-top: 0;
     }
-
-    header nav ul {
-        margin-top: 20px;
+    nav {
         width: 100%;
         justify-content: center;
     }
-
-    header nav ul li a {
-        font-size: 20px;
+    .greeting-wrapper {
+        height: 240px;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
     }
-    .greeting, .socials {
-        width: 100%;
+    .greeting h2{
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .greeting h3 {
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .greeting p {
+        font-family: "Dosis";
+        font-size: 15px;
+        font-weight: 450;
+        line-height: 20px;
+        padding-right: 45px;
+        letter-spacing: 3px;
+    }
+    #social {
+        width: 80%;
     }
 
     .greeting {
         text-align: center;
+    }
+    #secondary-title {
+        left: 0;
+        top: 900px;
+    }
+    .portfolio {
+        justify-items: center;
+        height: 570px;
+        flex: 0 50%;
+    }
+    /* figure out how to bring slider 
+    between carousel and title*/
+    .slider {
+    
+     }
+    #carousel {
+        align-items: flex-end;
+        perspective: 500px;
+        width: 50vw;
+        height: 300px;
+    }
+    .about-content p {
+        font-size: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+    }
+    .about-photo {
+        float: left;
+        bottom: 20px;
     }
     footer h2, footer div {
         text-align: center;
