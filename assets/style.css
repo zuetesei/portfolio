@@ -5,6 +5,18 @@ body {
     height: 100%; 
     box-sizing: border-box;
 }
+header {
+    border: 2px solid black;
+    height: 30px; 
+    display: flex;
+
+}
+.page-title {
+    height: 50%;
+    font-size: 20px;
+    border: 2px solid pink; 
+    margin: 0; 
+}
 
 /* greeting styles */
 .greeting {
@@ -40,6 +52,20 @@ body {
 .work {
     border: 2px solid salmon;
     height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    border: 2px solid brown; 
+    font-size: 10px;
+    width: 80px;
+    transform: rotate(-90deg);
+}
+.slide-wrapper {
+    width: 300px; 
+    height: 80px;
+    border: 2px solid rgb(50, 169, 127);
 }
 
 /* about me section styles  */
