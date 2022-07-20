@@ -1,394 +1,69 @@
-/* General Styles */
-:root {
-    --black: #000F20;
-    --red: #B71A2E;
-    --teal: #609CB5;
-    --green: #A1B63F;
-    --sky: #C2DBEB;
+html{
+    height:100%;
+}
+body {
+    height: 100%; 
+    box-sizing: border-box;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-/*Header  Styles*/
-header {
-    padding: 20px 35px;
-    background-color: var (--green);
-    background-image:url(photos/landing-bg.jpg);
-    background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-}
-header h1 {
-    font-weight: bold;
-    font-family: 'Baskerville';
-    font-size: 36px;
-    color: var(--black);
-}
-
-/* Main Section */
-.content {
-    height: 600px;
-    background-image:url(photos/landing-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 100px;
-}
-.self {
-    height: 100px;
-    width: 70px;
-    display: block;
-    margin-left: auto;
-    
-}
-.self img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 40px;
-}
-
-.greeting-wrapper {
-    width: 80%;
-    height: 250px;
-    background-color: var(--teal);
-    color: var(--black);
-    /*margin: 3.5%;*/
-    border-radius: 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-shadow: 0 0 10px rgba(28, 139, 187, 0.8);
-    margin-left: 110px;
-    align-content: space-around;
-    justify-content: flex-end;
-}
-.greeting-wrapper h2 {
-    font-family: "Baskerville";
-    font-weight: bold;
-    margin-left: 2em;
-    line-height: 2em;
-    clear: right;
-}
-.greeting-wrapper h3 {
-    font-family: "Baskerville";
-    font-weight: 600;
-    margin-left: 5em;
-    line-height: 5px;
-    clear: right;
-    padding-bottom: 25px;
-}
-.greeting-wrapper p {
-    font-family: "Baskerville";
-    font-weight: 400;
-    font-style: italic;
-    letter-spacing: 1px;
-    font-size: 20px;
-    margin-left: 2.4em;
-    line-height: 1.2em;
-    clear: right;
-    align-content: space-around;
-}
-
+/* greeting styles */
 .greeting {
-    font-family: "Dosis";
-    margin-left: 25px;
-    float: right;
-    width: 100%;
-}
-
-.greeting-wrapper img {
-    height: 100px;
-    width: 80px;
-    border-radius: 40px;
-}
-
-.socials {
-    width: 100%;
-    align-items: center;
-    width: 70%;
-    margin: 5px 5px 5px 10px;
-}
-
-.socials img {
-    height: 50px; 
-    width: 50px;
-    margin-left: 3em;
-    align-content: space-around;
-}
-
-.socials a {
-    padding-top: 3%;
-    align-items: center;
-    width: 80%;
-    margin: 5px 5px 5px 10px;
-}
-
-
-/* My Featured Work */
-.myportfolio {
-    background: radial-gradient(var(--red), var(--green));
-}
-
-.portfolio {
-    height: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 500px 100px;
-    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-#secondary-title h2 {
-    transform:rotate(-90deg);
-    position: absolute;
-    white-space: nowrap;
-    top: 950px;
-    left: 50px;
-    margin-top: 0;
-    font-family: 'Dosis';
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 4px;
-    color: var(--black)
-}
-#carousel {
-    grid-row: 1 / 2;
-    grid-column: 1 / 8;
-    width: 100vw;
-    height: 500px;
+    border: 2px solid greenyellow; 
+    height: 200px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    perspective: 600px;
-    --items: 5;
-    --middle: 3;
-    --position: 1;
-    pointer-events: none;
 }
-div .item {
-    position: absolute; 
+.card {
+    border: 2px solid teal;
+    background-color: lightblue;
+    height: 100px;
     width: 300px;
-    height: 400px;
-    background-color: var(--red);
-    --r: calc(var(--position) - var(--offset));
-    --abs: max(calc(var(--r) * -1), var(--r));
-    transition: all 0.25s linear;
-    transform: rotateY(calc(-10deg * var(--r)))
-        translateX(calc(-300px * var(--r)));
-    z-index: calc((var(--position) - var(--abs)));
-}
-
-div.item:nth-of-type(1) {
-    --offset:1;
-    background-color: var(--sky);
-}
-div.item:nth-of-type(2) {
-    --offset:2;
-    background-color: var(--teal);
-}
-div.item:nth-of-type(3) {
-    --offset:3;
-    background-color: var(--red);
-}
-div.item:nth-of-type(4) {
-    --offset:4;
-    background-color: var(--black);
-}
-div.item:nth-of-type(5) {
-    --offset:5;
-    background-color: var(--sky);
-}
-input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(1):checked ~ #carousel {
-    --position:1;
-}
-input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(2):checked ~ #carousel {
-    --position: 2;
-  }
-  input:nth-of-type(3) {
-    grid-column: 4 /5;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(3):checked ~ #carousel {
-    --position: 3;
-  }
-  input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(4):checked ~ #carousel {
-    --position: 4;
-  }
-  input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(5):checked ~ #carousel {
-    --position: 5;
-  }
-
-/* About Zue Section */
-.about-section {
-    height: 600px;
-    background-image: url(photos/about-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.about-section h2 {
-    font-family: 'Dosis';
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--black);
-    margin-left: 10em;
-    padding-top: 150px;
-    letter-spacing: 2px;
-}
-.about-content p {
-    margin-left: 8em;
-    font-family: 'Baskerville';
-    font-size: 24px;
-    color: var(--black);
-    width: 50px;
-    line-height: 2em;
-    padding-bottom: 10px;
-}
-
-.about-content {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-direction: column;
+}
+.card-title {
+    border: 2px solid black;
+    height: 25%;
+
+}
+.card-description {
+    border: 2px solid green;
+    height: 35% 
+}
+.socials {
+    border: 2px solid black; 
+    height: 40% 
 }
 
- .about-content > * {
-    flex: 1;
-    margin: 10px;
+/* portfolio styles */
+.work {
+    border: 2px solid salmon;
+    height: 40%;
 }
 
-.about-content img {
-    max-width: 300px;
-    height: max-content;
-    border-radius: 20%;
-    padding-right: 100px;
-    box-shadow:  0 0 10px rgba (0,0,0,0.9);
-}
-.connect img{
-    height: 80px; 
-    width: 80px;
-    margin-left: 40em;
-    align-content: center;
-}
-
-/* Footer Style */
-footer {
-    width: 100%;
-    padding: 4px 5px;
+/* about me section styles  */
+.about-container{
+    border: 2px solid black; 
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: var(--sky);
+    height: 30%; 
+}
+.right {
+    border: 2px solid pink;
+    width: 40%;
+}
+.left {
+    border: 2px solid orange;
+    width: 60%;
+    display: flex; 
+    flex-direction: column;
+}
+.about-text {
+    border: 2px solid green;
+    height: 80%; 
 }
 
-footer h2 {
-    color: var(--red);
-    font-size: 15px;
-    margin: 0
-}
-
-
-/*Media Query*/
-@media screen and (max-width: 980px) {
-    header {
-        padding-bottom: 0;
-        justify-content: left;
-        width: 100%;
-        margin-top: 0;
-    }
-    nav {
-        width: 100%;
-        justify-content: center;
-    }
-    .greeting-wrapper {
-        height: 240px;
-        display: flex;
-        justify-content: space-around;
-        align-content: space-around;
-    }
-    .greeting h2{
-        font-size: 25px;
-        margin-left: 0;
-    }
-    .greeting h3 {
-        font-size: 15px;
-        line-height: 10px;
-    }
-    .greeting p {
-        font-family: "Dosis";
-        font-size: 15px;
-        font-weight: 450;
-        line-height: 20px;
-        padding-right: 45px;
-        letter-spacing: 3px;
-    }
-    #social {
-        width: 80%;
-    }
-
-    .greeting {
-        text-align: center;
-    }
-    #secondary-title {
-        left: 0;
-        top: 900px;
-    }
-    .portfolio {
-        justify-items: center;
-        height: 570px;
-        flex: 0 50%;
-    }
-    /* figure out how to bring slider 
-    between carousel and title*/
-    .slider {
-    
-     }
-    #carousel {
-        align-items: flex-end;
-        perspective: 500px;
-        width: 50vw;
-        height: 300px;
-    }
-    .about-content p {
-        font-size: 25px;
-        display: flex;
-        flex-wrap: wrap;
-        float: right;
-    }
-    .about-photo {
-        float: left;
-        bottom: 20px;
-    }
-    footer h2, footer div {
-        text-align: center;
-        width: 100%;
-    }
+.email-me {
+    border: 2px solid blue; 
+    height: 20%;
 }
