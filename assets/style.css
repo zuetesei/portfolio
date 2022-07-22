@@ -7,6 +7,10 @@
     --green: #A1B63F;
     --sky: #C2DBEB;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 html{
     height:100%;
 }
@@ -245,4 +249,35 @@ input:nth-of-type(2) {
 .email-me img {
     width:30px ;
     height:30px ;
+}
+footer {
+    background-color: var(--sky);
+}
+footer h4 {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 980px) {
+    #carousel {
+        height: 80%;
+    }
+    .about-container {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 575px)  {
+    .work {
+        height: 60%;
+    }
+    .slide-wrapper {
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-container {
+        height: 60%;
+    }
 }
