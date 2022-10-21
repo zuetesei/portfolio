@@ -25,25 +25,38 @@ body {
     margin: 0;
 }
 
-/* home styles */
-h2 {
-    font-family: 'DM Serif Display';
+a {
+    color: var(--green);
+    text-decoration: none;
 }
 
+h2 {
+    font-family: 'DM Serif Display';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* home styles */
 #profile-photo {
     height: 300px;
     width: auto;
 }
 
+.bio {
+    text-align: justify;
+}
+
 /* project styles */
+h3 {}
+
 #project-links a {
     line-height: 3;
 }
 
 /* connect styles */
-#socials a {
-    color: var(--green);
-    text-decoration: none;
+#connect h2 {
+    text-transform: none;
+    letter-spacing: 0;
 }
 
 /* footer styles */
