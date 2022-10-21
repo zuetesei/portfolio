@@ -26,12 +26,12 @@ body {
 }
 
 /* home styles */
-#name {
+h2 {
     font-family: 'DM Serif Display';
 }
 
 #profile-photo {
-    height: 60%;
+    height: 300px;
     width: auto;
 }
 
