@@ -1,7 +1,7 @@
 # My Portfolio
 
 ## Purpose 
-This is my second attempt to build a portfolio website that showcases my work as a Web Developr. 
+This was my second attempt to build a portfolio website that showcases my work as a Web Developr. 
 
 ## Build With:
 * HTML
